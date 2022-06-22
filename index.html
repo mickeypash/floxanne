@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bottom {
+  /* The image used */
+  background-color: #FDF5F5;
+  background-image: url("bottom.png");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.top {
+  /* The image used */
+  background-image: url("top.jpeg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.top:hover {
+  opacity:0;
+}
+
+</style>
+
 </head>
 <body>
-<div id="cf">
-    <img class="bottom" alt="card" src="bottom.png" />
-    <img class="top" alt="envelope" src="top.jpeg" />
-</div>
+    <div class="top"></div>
+    <div class="bottom"></div>
 </body>
 </html>
