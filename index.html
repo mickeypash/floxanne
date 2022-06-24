@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="style.css">
+    <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+    }
+    .top {
+        background-image: url(top.jpeg);
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: #b6bac0;
+        transition: background-image 3s ease-in-out;
+    }
+    .top:hover {
+        background-image: url(bottom.png);
+        background-size: contain;
+        background-color: #fdf5f5;
+    }
+    </style>
 </head>
 <body>
-<div id="cf">
-    <img class="bottom" alt="card" src="bottom.png" />
-    <img class="top" alt="envelope" src="top.jpeg" />
-</div>
+    <div class="top"></div>
 </body>
 </html>
